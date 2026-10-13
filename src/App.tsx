@@ -1,8 +1,7 @@
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
-import ProjectList from './components/ProjectList'
-import { projects } from './data/projects'
+import Projects from './components/Projects'
 
 function App() {
   return (
@@ -10,7 +9,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
-      <ProjectList projects={projects} />
+      <Projects />
     </div>
   )
 }

@@ -4,7 +4,8 @@ function Hero() {
   return (
     <section id="home" className={styles.hero}>
       <div className={styles.text}>
-        <h1>Hi, I'm Ika</h1>
+       <p className={styles.label}>Frontend development student</p>
+<h1>Hi, I'm Ika</h1>
         <p>Frontend developer who loves building dark, modern and flowing interfaces.</p>
 
         <div className={styles.buttons}>
@@ -14,8 +15,7 @@ function Hero() {
       </div>
 
       <img
-        src="/images/profile-picture.png"
-        alt="Ika Ossler"
+        src="/images/profile-picture.png" alt="Ika Ossler"
         className={styles.image}
       />
     </section>
