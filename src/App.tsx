@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import Hero from './components/Hero'
 import ProjectList from './components/ProjectList'
 import { projects } from './data/projects'
 
@@ -6,7 +7,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <h1>Hello, I'm Ika</h1>
+      <Hero />
       <ProjectList projects={projects} />
     </div>
   )
