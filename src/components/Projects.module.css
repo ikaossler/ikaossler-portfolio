@@ -1,0 +1,31 @@
+.label {
+  color: var(--mint);
+  font-size: 14px;
+  margin: 0 0 8px;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 32px;
+}
+
+.filters button {
+  height: 44px;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  cursor: pointer;
+  transition: background 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filters button:hover {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: rgba(168, 85, 247, 0.65);
+  box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+}
