@@ -27,3 +27,10 @@
   text-decoration: none;
   color: var(--mint);
 }
+
+
+@media (min-width: 768px) {
+  .card {
+    padding: 48px;
+  }
+}
