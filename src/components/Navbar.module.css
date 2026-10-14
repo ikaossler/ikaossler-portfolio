@@ -17,10 +17,24 @@ nav {
   margin: 0 auto;
 }
 
+nav a {
+  color: var(--text);
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  background: rgba(168, 85, 247, 0.3);
+  border-color: rgba(168, 85, 247, 0.65);
+}
+
 nav > a {
   font-size: 20px;
   font-weight: 700;
-  text-decoration: none;
+  padding: 0;
 }
 
 .menuButton {
@@ -55,12 +69,6 @@ nav > a {
   padding: 0;
 }
 
-.linksOpen a {
-  display: block;
-  padding: 12px 0;
-  text-decoration: none;
-}
-
 @media (min-width: 768px) {
   .menuButton {
     display: none;
@@ -71,13 +79,9 @@ nav > a {
     display: flex;
     flex-direction: row;
     width: auto;
-    gap: 24px;
+    gap: 8px;
     margin: 0;
     list-style: none;
-    padding: 0;
-  }
-
-  .linksOpen a {
     padding: 0;
   }
 }
