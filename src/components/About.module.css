@@ -43,3 +43,22 @@
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.16);
 }
+
+@media (min-width: 768px) {
+  .about {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+    text-align: left;
+  }
+
+  .text {
+    flex: 1;
+  }
+
+  .skillsCard {
+    flex: 1;
+    margin: 0;
+  }
+}
