@@ -20,9 +20,13 @@ function Projects() {
 
       <div className={styles.filters}>
         {tags.map((tag) => (
-          <button key={tag} onClick={() => setSelectedTag(tag)}>
-            {tag}
-          </button>
+         <button
+          key={tag}
+          onClick={() => setSelectedTag(tag)}
+          className={selectedTag === tag ? styles.active : ''}
+>
+  {tag}
+</button>
         ))}
       </div>
 
