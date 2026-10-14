@@ -3,7 +3,7 @@
 A dark, modern one-page portfolio built with React and TypeScript.
 
 **Live site:** https://ikaossler-portfolio.vercel.app/
-**Figma sketch:** (add link here)
+**Figma sketch:** https://www.figma.com/design/PNp6Fhgv8Fp4T8AtjZkSfr/Portfolio
 
 ## Tech stack
 
