@@ -18,3 +18,9 @@ body {
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.6;
 }
+
+section {
+  padding: 38px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
