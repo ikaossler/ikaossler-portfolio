@@ -30,8 +30,9 @@
 }
 
 .text .label {
-  margin: 0 auto 8px;
+  margin: 0 0 4px;
   font-size: 14px;
+  line-height: 1.2;
   color: var(--mint);
 }
 

@@ -24,3 +24,16 @@ section {
   max-width: 1200px;
   margin: 0 auto;
 }
+h1 {
+  line-height: 1.1;
+  margin: 0 0 16px;
+}
+
+h2 {
+  line-height: 1.1;
+  margin: 0 0 24px;
+}
+
+a {
+  color: var(--text);
+}

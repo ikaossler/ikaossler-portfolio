@@ -1,7 +1,8 @@
 .label {
   color: var(--mint);
   font-size: 14px;
-  margin: 0 0 8px;
+  line-height: 1.2;
+  margin: 0 0 4px;
 }
 
 .filters {
