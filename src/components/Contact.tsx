@@ -9,9 +9,9 @@ function Contact() {
         <p>Write a short sentence about how people can reach you.</p>
 
         <ul className={styles.links}>
-          <li><a href="mailto:din@epost.se">din@epost.se</a></li>
-          <li><a href="https://github.com/ikaossler">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/ditt-namn">LinkedIn</a></li>
+          <li><a href="mailto:ika@ossler.se">ika@ossler.se</a></li>
+          <li><a href="https://www.linkedin.com/in/ika-ossler-2672833a0/">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ikaossler">LinkedIn</a></li>
         </ul>
       </div>
     </section>
