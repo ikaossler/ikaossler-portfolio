@@ -21,7 +21,7 @@ export const projects: Project[] = [
   {
     id: 2,
     title: 'Book API',
-    description: 'Group project (3 students): a book site with a REST API and admin panel where visitors can browse books and write reviews. I built the reviews feature.',
+    description: 'Group project: a book site with a REST API and admin panel where visitors can browse books and write reviews. I built the reviews feature.',
     image: '/images/book-api.png',
     tags: ['TypeScript', 'Node.js', 'Express', 'MongoDB'],
     repoUrl: 'https://github.com/ikaossler/api-assignment-2',
@@ -30,7 +30,7 @@ export const projects: Project[] = [
   {
     id: 3,
     title: 'ERROR 404',
-    description: 'Group project (4 students): a digital escape room where the player escapes four rooms based on common internet annoyances, like CAPTCHAs and pop-ups.',
+    description: 'Group project: a digital escape room where the player escapes four rooms based on common internet annoyances, like CAPTCHAs and pop-ups.',
     image: '/images/error-404.png',
     tags: ['TypeScript', 'HTML', 'CSS'],
     repoUrl: 'https://github.com/ikaossler/js-intro-grupparbete',
@@ -39,7 +39,7 @@ export const projects: Project[] = [
   {
     id: 4,
     title: 'Juniper – UX Case Study',
-    description: 'A group UX project where we redesigned a poorly working webshop for a fictional gin brand. We covered user research, personas, wireframes, testing and a Figma prototype.',
+    description: 'A group UX project where we designed a fictional gin brand. We covered user research, personas, wireframes, testing and a Figma prototype.',
     image: '/images/juniper-ux.png',
     tags: ['Figma', 'UX Design'],
     figmaUrl: 'https://www.figma.com/design/ARf1L8ZNGDvzOZd9qLrK65/Vector-Graphics---Juniper--Copy-',
@@ -47,7 +47,7 @@ export const projects: Project[] = [
   {
     id: 5,
     title: 'Weather App',
-    description: 'Shows weather in the chosen city',
+    description: 'Fictional project: a weather app where you search for any city and see the current weather and the forecast for the coming days.',
     image: '/images/weather.png',
     tags: ['React', 'API'],
     repoUrl: 'https://github.com/ikaossler',
@@ -55,7 +55,7 @@ export const projects: Project[] = [
   {
     id: 6,
     title: 'Spotify Web Player',
-    description: 'A music player with playlists, search and a now-playing view.',
+    description: 'Fictional project: a music player with playlists, search and a now-playing view, inspired by Spotify.',
     image: '/images/spotify.png',
     tags: ['React', 'CSS'],
     repoUrl: 'https://github.com/ikaossler',

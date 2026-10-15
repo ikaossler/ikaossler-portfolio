@@ -60,8 +60,9 @@ nav > a:hover {
   background: none;
   border-color: transparent;
   box-shadow: none;
+  transform: none;
+  backdrop-filter: none;
 }
-
 .menuButton {
   width: 44px;
   height: 44px;
