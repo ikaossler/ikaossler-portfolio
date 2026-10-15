@@ -6,7 +6,11 @@ function Contact() {
       <div className={styles.card}>
         <p className={styles.label}>Contact</p>
         <h2>Get in touch</h2>
-        <p>Write a short sentence about how people can reach you.</p>
+        <p>
+          Have a project, an internship or just a question?
+          <br />
+          Feel free to reach out.
+        </p>
 
         <ul className={styles.links}>
           <li><a href="mailto:ika@ossler.se">ika@ossler.se</a></li>
