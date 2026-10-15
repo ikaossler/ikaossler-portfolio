@@ -24,6 +24,16 @@ body {
     radial-gradient(600px circle at 70% 89%, rgba(138, 23, 110, 0.3), transparent 60%);
 }
 
+@media (max-width: 767px) {
+  body {
+    background-image:
+      radial-gradient(500px circle at 15% 2%, rgba(138, 23, 110, 0.35), transparent 70%),
+      radial-gradient(500px circle at 100% 22%, rgba(168, 85, 247, 0.25), transparent 70%),
+      radial-gradient(1000px circle at 50% 55%, rgba(167, 232, 215, 0.1), transparent 90%),
+      radial-gradient(500px circle at 80% 96%, rgba(138, 23, 110, 0.22), transparent 80%);
+  }
+}
+
 section {
   padding: 38px 24px;
   max-width: 1200px;
