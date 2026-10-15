@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 32px;
-  text-align: center;
+  text-align: left;
 }
 
 .label {

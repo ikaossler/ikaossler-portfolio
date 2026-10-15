@@ -18,13 +18,11 @@
 }
 
 .text h1 {
-  max-width: 280px;
   margin: 0 auto 16px;
   color: var(--text);
 }
 
 .text p {
-  max-width: 280px;
   margin: 0 auto 16px;
   color: var(--text);
 }
