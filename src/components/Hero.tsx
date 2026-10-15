@@ -17,8 +17,10 @@ function Hero() {
   My name is <span className={styles.name}>Ika</span>
 </h1>
         <p>
-          I'm a Frontend Development student, and I like to learn how to build
-          modern, edgy and fast web experiences with React and TypeScript.
+          <p>
+            Curious and creative, and always learning how to build better web
+            experiences.
+          </p>
         </p>
 
         <div className={styles.buttons}>
