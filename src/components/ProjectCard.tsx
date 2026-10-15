@@ -21,6 +21,7 @@ function ProjectCard({ project }: ProjectCardProps) {
       <div className={styles.links}>
         {project.repoUrl && <a href={project.repoUrl}>Repo</a>}
         {project.liveUrl && <a href={project.liveUrl}>Live demo</a>}
+        {project.figmaUrl && <a href={project.figmaUrl}>Figma</a>}
       </div>
     </article>
   )

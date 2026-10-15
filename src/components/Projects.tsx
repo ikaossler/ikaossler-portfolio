@@ -3,7 +3,7 @@ import styles from './Projects.module.css'
 import ProjectList from './ProjectList'
 import { projects } from '../data/projects'
 
-const tags = ['All', 'React', 'TypeScript', 'CSS', 'HTML', 'JavaScript', 'API']
+const tags = ['All', 'React', 'TypeScript', 'CSS', 'HTML', 'API', 'Figma']
 
 function Projects() {
   const [selectedTag, setSelectedTag] = useState('All')

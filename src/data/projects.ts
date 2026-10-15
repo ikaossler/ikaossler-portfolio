@@ -6,6 +6,7 @@ export type Project = {
   tags: string[]
   repoUrl?: string
   liveUrl?: string
+  figmaUrl?: string
 }
 
 export const projects: Project[] = [
@@ -33,9 +34,18 @@ export const projects: Project[] = [
     image: '/images/error-404.png',
     tags: ['TypeScript', 'HTML', 'CSS'],
     repoUrl: 'https://github.com/ikaossler/js-intro-grupparbete',
+    liveUrl: 'https://medieinstitutet.github.io/fed25d-js-intro-grupparbete-the-natural-stunner-squad/',
   },
   {
     id: 4,
+    title: 'Juniper – UX Case Study',
+    description: 'A group UX project where we redesigned a poorly working webshop for a fictional gin brand. We covered user research, personas, wireframes, testing and a Figma prototype.',
+    image: '/images/juniper-ux.png',
+    tags: ['Figma', 'UX Design'],
+    figmaUrl: 'https://www.figma.com/design/ARf1L8ZNGDvzOZd9qLrK65/Vector-Graphics---Juniper--Copy-',
+  },
+  {
+    id: 5,
     title: 'Weather App',
     description: 'Shows weather in the chosen city',
     image: '/images/weather.png',
@@ -43,19 +53,11 @@ export const projects: Project[] = [
     repoUrl: 'https://github.com/ikaossler',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Spotify Web Player',
     description: 'A music player with playlists, search and a now-playing view.',
     image: '/images/spotify.png',
     tags: ['React', 'CSS'],
-    repoUrl: 'https://github.com/ikaossler',
-  },
-  {
-    id: 6,
-    title: 'Tesla Configurator',
-    description: 'Choose a car model, color and wheels and see the price update.',
-    image: '/images/tesla.png',
-    tags: ['React', 'TypeScript'],
     repoUrl: 'https://github.com/ikaossler',
   },
 ]
