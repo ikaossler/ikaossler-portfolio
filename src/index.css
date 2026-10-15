@@ -17,6 +17,11 @@ body {
   color: var(--text);
   font-family: 'Space Grotesk', sans-serif;
   line-height: 1.6;
+    background-image:
+    radial-gradient(600px circle at 0% 8%, rgba(138, 23, 110, 0.35), transparent 70%),
+    radial-gradient(600px circle at 100% 22%, rgba(168, 85, 247, 0.25), transparent 70%),
+    radial-gradient(650px circle at 50% 55%, rgba(167, 232, 215, 0.12), transparent 70%),
+    radial-gradient(600px circle at 70% 89%, rgba(138, 23, 110, 0.3), transparent 60%);
 }
 
 section {

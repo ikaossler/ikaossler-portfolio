@@ -25,3 +25,6 @@ npm run dev
 ## Changes compared to the sketch
 
 (write changes here as you go)
+
+
+- Small adjustments to sizes, spacing and the background glow compared to the sketch.
