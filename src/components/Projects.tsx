@@ -3,15 +3,26 @@ import styles from './Projects.module.css'
 import ProjectList from './ProjectList'
 import { projects } from '../data/projects'
 
-const tags = ['All', 'React', 'TypeScript', 'CSS', 'HTML', 'API', 'Figma']
+const tags = ['React', 'TypeScript', 'CSS', 'HTML', 'API', 'Figma']
 
 function Projects() {
-  const [selectedTag, setSelectedTag] = useState('All')
+  const [selectedTags, setSelectedTags] = useState<string[]>([])
+
+   function toggleTag(tag: string) {
+    if (selectedTags.includes(tag)) {
+      setSelectedTags(selectedTags.filter((t) => t !== tag))
+    } else {
+      setSelectedTags([...selectedTags, tag])
+    }
+  }
+
 
   const filteredProjects =
-    selectedTag === 'All'
+    selectedTags.length === 0
       ? projects
-      : projects.filter((project) => project.tags.includes(selectedTag))
+      : projects.filter((project) => 
+          project.tags.some((tag) => selectedTags.includes(tag))
+        )
 
   return (
     <section id="projects" className={styles.projects}>
@@ -22,12 +33,13 @@ function Projects() {
         {tags.map((tag) => (
          <button
           key={tag}
-          onClick={() => setSelectedTag(tag)}
-          className={selectedTag === tag ? styles.active : ''}
+          onClick={() => toggleTag(tag)}
+          className={selectedTags.includes(tag) ? styles.active : ''}
 >
   {tag}
 </button>
         ))}
+        <button onClick={() => setSelectedTags([])}>Clear filter</button>
       </div>
 
       <ProjectList projects={filteredProjects} />
