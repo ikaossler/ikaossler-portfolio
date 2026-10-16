@@ -1,5 +1,6 @@
 import type { Project } from '../data/projects'
 import styles from './ProjectCard.module.css'
+import { motion } from 'motion/react'
 
 type ProjectCardProps = {
   project: Project
@@ -7,7 +8,14 @@ type ProjectCardProps = {
 
 function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className={styles.card}>
+    <motion.article
+      className={styles.card}
+      layout
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       <img src={project.image} alt={project.title} className={styles.image} />
       <h3>{project.title}</h3>
       <p>{project.description}</p>
@@ -23,7 +31,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         {project.liveUrl && <a href={project.liveUrl}>Live demo</a>}
         {project.figmaUrl && <a href={project.figmaUrl}>Figma</a>}
       </div>
-    </article>
+    </motion.article>
   )
 }
 
