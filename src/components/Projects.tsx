@@ -39,7 +39,7 @@ function Projects() {
   {tag}
 </button>
         ))}
-        <button onClick={() => setSelectedTags([])}>Clear filter</button>
+        <button className={styles.clear} onClick={() => setSelectedTags([])}>Clear filter</button>
       </div>
 
       <ProjectList projects={filteredProjects} />
