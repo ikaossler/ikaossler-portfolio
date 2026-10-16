@@ -14,8 +14,8 @@ function Contact() {
 
         <ul className={styles.links}>
           <li><a href="mailto:ika@ossler.se">ika@ossler.se</a></li>
-          <li><a href="https://www.linkedin.com/in/ika-ossler-2672833a0/">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/ikaossler">LinkedIn</a></li>
+          <li><a href="https://github.com/ikaossler">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/ika-ossler-2672833a0/">LinkedIn</a></li>
         </ul>
       </div>
     </section>
