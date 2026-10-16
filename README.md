@@ -69,6 +69,8 @@ Then open the address shown in the terminal (usually http://localhost:5173).
 - Some projects are fictional concept projects, shown with mockup images.
 - The "All" filter button is replaced by "Clear filter": when no tag is selected, all projects are shown.
 - Small adjustments to sizes, spacing and the background glow.
+- The sketch used placeholder projects and some Swedish placeholder text. In the final site the cards show my real and concept projects, and all text is in English.
+- The text about me (About section, hero and contact) was written or refined during the build, so it differs slightly from the wording in the sketch.
 
 ## 🔮 Next steps
 
