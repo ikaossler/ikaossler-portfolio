@@ -70,6 +70,12 @@ Then open the address shown in the terminal (usually http://localhost:5173).
 - The "All" filter button is replaced by "Clear filter": when no tag is selected, all projects are shown.
 - Small adjustments to sizes, spacing and the background glow.
 
+## 🔮 Next steps
+
+- Extend the liquid glass look to more parts of the page. So far it is used on the navbar, the filter buttons, the contact card and the form, and I want to apply it consistently to every section, including the project cards.
+- Collect the shared glass styles in one place (CSS variables or a reusable class).
+- Replace the fictional projects with real ones as I build more.
+
 ## Reflection
 
 **Component architecture**
