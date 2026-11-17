@@ -1,5 +1,5 @@
 :root {
-  --bg: #efe8dd;
+  --bg: #efebe4;
   --text: #17131f;
   --muted: rgba(23, 19, 31, 0.62);
   --accent: #6e1f3f;
@@ -15,7 +15,7 @@
 body {
   margin: 0;
   background-color: var(--bg);
-  background-image: linear-gradient(120deg, #f0e9de 0%, #e6dccd 55%, #d8cbb9 100%);
+  background-image: linear-gradient(120deg, #efebe4 0%, #e5dfd4 55%, #d7cfc2 100%);
   background-attachment: fixed;
   color: var(--text);
   font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Inter', sans-serif;
