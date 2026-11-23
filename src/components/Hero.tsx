@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section id="home" className={styles.hero}>
       <img
-        src="/images/profile-picture.png"
+        src="/images/profile-picture.jpg"
         alt="Ika Ossler"
         className={styles.image}
       />
