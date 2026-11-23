@@ -1,4 +1,4 @@
-# Ika Ossler – Portfolio
+# ✨ Ika Ossler – Portfolio
 
 ![React](https://img.shields.io/badge/React-20232a?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178c6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -89,10 +89,11 @@ Then open the address shown in the terminal (usually http://localhost:5173).
 
 ## 🔮 Next steps
 
-- 🏋️ Give Training Log the same visual style as this portfolio once it has been graded.
-- 🧹 Clean up the CSS further: some global element selectors in the navbar styles can leak into other components, and I want to move them into classes.
-- 🔦 Run Lighthouse and improve accessibility and performance scores.
-- ➕ Add more real projects as I build them during my education.
+- 🏋️ Give Training Log the same visual style as this portfolio, so my best technical project looks as good as the site that presents it.
+- 🧹 Tidy the CSS: some global element selectors in the navbar styles can leak into other components, and I want to move them into classes.
+- ♿ Do an accessibility pass: check colour contrast for the pink text, add clear keyboard focus styles and review alt texts.
+- 🖼️ Replace the project screenshots with smaller, optimised images so the project section loads faster.
+- ➕ Add new work from my internship (LIA) and later projects, and keep the strongest ones first.
 
 ## 💭 Reflection
 
