@@ -1,32 +1,24 @@
 .hero {
   position: relative;
   max-width: none;
-  min-height: 700px;
   margin: 0;
-  padding: 0 32px 48px;
+  padding: 12px 0 56px;
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
   overflow: hidden;
 }
 
 .image {
-  position: absolute;
-  top: 0;
-  left: 11%;
-  right: auto;
-  width: 78%;
-  height: 380px;
+  display: block;
+  width: calc(100% - 78px);
+  max-width: 420px;
+  height: auto;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
-  object-position: 50% 10%;
-  filter: sepia(0.25) contrast(1.05);
-  -webkit-mask-image:
-    linear-gradient(to right, transparent 0%, #000 25%, #000 75%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, #000 10%, #000 50%, transparent 100%);
-  mask-image:
-    linear-gradient(to right, transparent 0%, #000 25%, #000 75%, transparent 100%),
-    linear-gradient(to bottom, transparent 0%, #000 10%, #000 50%, transparent 100%);
-  -webkit-mask-composite: source-in;
-  mask-composite: intersect;
+  object-position: 50% 15%;
+  margin: 0 0 44px 32px;
+  border-radius: 0;
+  box-shadow: 14px 14px 0 var(--accent);
 }
 
 .inner {
@@ -35,115 +27,123 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 32px;
 }
 
 .text {
-  max-width: 560px;
+  max-width: 640px;
+}
+
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
 }
 
 .label {
-  margin: 0 0 14px;
-  font-size: 14px;
+  margin: 0 0 12px;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: 0.16em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
+  color: var(--text);
+}
+
+.big {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.big a {
+  font-size: clamp(56px, 17vw, 132px);
+  font-weight: 800;
+  letter-spacing: -0.06em;
+  line-height: 0.95;
+  color: var(--text);
+  text-decoration: none;
+  transition: color 0.25s, transform 0.25s;
+}
+
+.big a:first-child {
   color: var(--accent);
 }
 
-.hero h1 {
-  font-size: clamp(40px, 11vw, 84px);
-}
-
-.name {
+.big a:hover {
   color: var(--accent);
+  transform: translateX(10px);
 }
 
 .intro {
-  margin: 0 0 28px;
-  max-width: 440px;
-  font-size: 19px;
+  margin: 24px 0 0;
+  max-width: 420px;
+  font-size: 18px;
+  line-height: 1.6;
   color: var(--muted);
 }
 
-.buttons {
+.status {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-}
-
-.buttons a {
-  padding: 16px 30px;
-  border-radius: 999px;
-  font-size: 16px;
+  align-items: center;
+  gap: 8px 12px;
+  margin: 24px 0 0;
+  font-size: 14px;
   font-weight: 600;
-  text-decoration: none;
   color: var(--text);
-  background: rgba(255, 255, 255, 0.4);
-  box-shadow:
-    inset 2px 2px 0 -1px rgba(255, 255, 255, 0.95),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.7),
-    0 8px 20px rgba(40, 15, 35, 0.12);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.buttons a:first-child {
-  color: #fff;
+.dot {
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 10px 24px rgba(60, 10, 30, 0.3);
+  box-shadow: 0 0 0 5px rgba(200, 38, 95, 0.15);
 }
 
-.buttons a:hover {
-  transform: translateY(-2px);
+.status a {
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--text);
+  padding-bottom: 2px;
+  transition: color 0.2s, border-color 0.2s;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .hero {
-    min-height: 900px;
-    padding: 0 48px 56px;
-  }
-
-  .image {
-    left: calc(50% - 208px);
-    width: 416px;
-    height: 520px;
-  }
+.status a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
 }
 
 @media (min-width: 700px) {
   .hero {
     min-height: 620px;
-    padding: 0 48px;
+    padding: 0;
+    flex-direction: row;
     align-items: center;
   }
 
-  .hero h1 {
-    font-size: clamp(40px, 7.5vw, 84px);
-  }
-
   .image {
-    left: auto;
-    right: 0;
-    width: 46%;
-    max-width: 620px;
-    height: 100%;
-    object-position: 50% 10%;
-    -webkit-mask-image:
-      linear-gradient(to right, transparent 0%, #000 45%),
-      linear-gradient(to bottom, transparent 0%, #000 14%, #000 65%, transparent 100%);
-    mask-image:
-      linear-gradient(to right, transparent 0%, #000 45%),
-      linear-gradient(to bottom, transparent 0%, #000 14%, #000 65%, transparent 100%);
-    -webkit-mask-composite: source-in;
-    mask-composite: intersect;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hero {
-    min-height: 680px;
+    position: absolute;
+    top: 50%;
+    right: max(70px, calc((100% - 1200px) / 2 + 70px));
+    transform: translateY(-50%);
+    width: clamp(240px, 30vw, 400px);
+    max-width: none;
+    height: auto;
+    aspect-ratio: 4 / 5;
+    margin: 0;
+    box-shadow: 22px 22px 0 var(--accent);
   }
 
-  .image {
-    width: 52%;
+  .inner {
+    padding: 0 48px;
+  }
+
+  .big a {
+    font-size: clamp(64px, 11vw, 132px);
   }
 }

@@ -7,7 +7,9 @@ function About() {
     <section id="about" className={styles.about}>
       <div className={styles.heading}>
         <p className={styles.label}>About me</p>
-        <h2>A little bit about who I am</h2>
+        <h2>
+          A little bit about <span className={styles.accent}>who I am</span>
+        </h2>
       </div>
 
       <div className={styles.content}>

@@ -7,8 +7,6 @@ type ProjectCardProps = {
 }
 
 function ProjectCard({ project }: ProjectCardProps) {
-  const mainLink = project.liveUrl || project.repoUrl || project.figmaUrl
-
   return (
     <motion.article
       className={styles.card}
@@ -20,30 +18,22 @@ function ProjectCard({ project }: ProjectCardProps) {
     >
       <div className={styles.frame}>
         <img src={project.image} alt={project.title} className={styles.image} />
+      </div>
 
-        <div className={styles.glass}>
-          <div>
-            <h3>{project.title}</h3>
-            <ul className={styles.tags}>
-              {project.tags.map((tag) => (
-                <li key={tag}>{tag}</li>
-              ))}
-            </ul>
-          </div>
-
-          {mainLink && (
-            <a
-              href={mainLink}
-              className={styles.arrow}
-              aria-label={`Open ${project.title}`}
-            >
-              ↗
-            </a>
-          )}
-        </div>
+      <div className={styles.top}>
+        <h3>{project.title}</h3>
+        <span className={styles.number}>
+          {String(project.id).padStart(2, '0')}
+        </span>
       </div>
 
       <p className={styles.description}>{project.description}</p>
+
+      <ul className={styles.tags}>
+        {project.tags.map((tag) => (
+          <li key={tag}>{tag}</li>
+        ))}
+      </ul>
 
       <div className={styles.links}>
         {project.repoUrl && <a href={project.repoUrl}>Repo ↗</a>}

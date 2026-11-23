@@ -11,21 +11,26 @@ function Hero() {
 
       <div className={styles.inner}>
         <div className={styles.text}>
+          <h1 className={styles.srOnly}>Ika Ossler, frontend developer</h1>
+
           <p className={styles.label}>Frontend development student</p>
-          <h1>
-            Hello,
-            <br />
-            My name is <span className={styles.name}>Ika</span>
-          </h1>
+
+          <div className={styles.big}>
+            <a href="#projects">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+          </div>
+
           <p className={styles.intro}>
             Curious and creative, and always learning how to build better web
             experiences.
           </p>
 
-          <div className={styles.buttons}>
-            <a href="#projects">View projects</a>
-            <a href="#contact">Contact me</a>
-          </div>
+          <p className={styles.status}>
+            <span className={styles.dot} />
+            Looking for an internship (LIA) · Apr – Oct 2027 ·{' '}
+            <a href="mailto:ika@ossler.se">ika@ossler.se</a>
+          </p>
         </div>
       </div>
     </section>

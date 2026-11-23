@@ -1,15 +1,7 @@
-.card {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    'info'
-    'form'
-    'links';
-  gap: 40px;
-}
-
-.info {
-  grid-area: info;
+.contact {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 80px;
 }
 
 .label {
@@ -21,156 +13,57 @@
   color: var(--accent);
 }
 
-.info h2 {
-  margin: 0 0 20px;
-  font-size: clamp(32px, 6vw, 48px);
-}
-
-.info p:not(.label) {
+.contact h2 {
   margin: 0;
-  max-width: 420px;
-  font-size: 18px;
-  line-height: 1.7;
-  color: var(--muted);
+  font-size: clamp(32px, 6vw, 48px);
 }
 
 .accent {
   color: var(--accent);
 }
 
-.form {
-  grid-area: form;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 26px;
+.text {
+  margin: 14px auto 0;
+  max-width: 440px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: var(--muted);
 }
 
-.field {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.fullWidth {
-  grid-column: 1 / -1;
-}
-
-.field label {
-  font-size: 13px;
-  font-weight: 600;
-  color: var(--text);
-}
-
-.field input,
-.field textarea {
-  font-family: inherit;
-  font-size: 16px;
-  color: var(--text);
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid rgba(23, 19, 31, 0.3);
-  border-radius: 0;
-  padding: 8px 0;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.field textarea {
-  min-height: 110px;
-  resize: vertical;
-}
-
-.field input:focus,
-.field textarea:focus {
-  outline: none;
-  border-bottom-color: var(--accent);
-  box-shadow: 0 1px 0 var(--accent);
-}
-
-.field .inputError {
-  border-bottom-color: var(--error);
-  box-shadow: 0 1px 0 var(--error);
-}
-
-.error {
-  margin: 0;
-  color: var(--error);
-  font-size: 14px;
-}
-
-.success {
-  grid-column: 1 / -1;
-  margin: 0;
-  color: var(--accent);
-  font-weight: 600;
-}
-
-.button {
-  grid-column: 1 / -1;
-  justify-self: start;
-  font-family: inherit;
-  font-size: 13px;
+.mail {
+  display: inline-block;
+  margin-top: 28px;
+  font-size: clamp(18px, 5vw, 22px);
   font-weight: 700;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: #fff;
-  cursor: pointer;
-  padding: 14px 32px;
-  border: none;
-  border-radius: 999px;
-  background: var(--accent);
-  box-shadow: 0 8px 20px rgba(110, 31, 63, 0.3);
-  transition: transform 0.2s, box-shadow 0.2s;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  text-decoration: none;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 3px;
+  transition: color 0.2s;
 }
 
-.button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(110, 31, 63, 0.35);
+.mail:hover {
+  color: var(--accent);
 }
 
 .links {
-  grid-area: links;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 22px;
 }
 
 .links a {
-  display: inline-block;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 600;
   color: var(--text);
   text-decoration: none;
-  border-bottom: 1px solid rgba(23, 19, 31, 0.25);
-  padding-bottom: 2px;
-  transition: color 0.2s, border-color 0.2s;
+  opacity: 0.8;
+  transition: color 0.2s, opacity 0.2s;
 }
 
 .links a:hover {
   color: var(--accent);
-  border-color: var(--accent);
-}
-
-@media (min-width: 768px) {
-  .card {
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    grid-template-rows: auto 1fr;
-    grid-template-areas:
-      'info form'
-      'links form';
-    column-gap: 64px;
-    row-gap: 36px;
-  }
-
-  .form {
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-  }
-
-  .links {
-    align-self: start;
-  }
+  opacity: 1;
 }
