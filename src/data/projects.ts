@@ -27,7 +27,7 @@ export const projects: Project[] = [
       'Group project: a book site with a REST API and admin panel where visitors can browse books and write reviews. I built the reviews feature.',
     image: '/images/book-api.png',
     tags: ['TypeScript', 'Node.js', 'Express', 'MongoDB'],
-    repoUrl: 'https://github.com/ikaossler/api-assignment-2',
+    repoUrl: 'https://github.com/ikaossler/api-assignment-2-showcase',
     liveUrl: 'https://api-assignment-2-eosin.vercel.app/',
   },
   {
